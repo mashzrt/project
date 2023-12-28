@@ -1,6 +1,6 @@
 @font-face {
   font-display: swap;
-  font-family: Open Sans;
+  font-family: OpenSans;
   font-style: normal;
   font-weight: 300;
   src: url("open-sans-v40-latin-300.7ceb269f.woff2") format("woff2");
@@ -23,6 +23,9 @@
 }
 
 .intro {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background: url("back-desktop.121c146f.jpg") center / cover no-repeat;
   width: 100%;
   height: 100vh;
@@ -40,7 +43,7 @@
 
 ul {
   justify-content: space-evenly;
-  width: 900px;
+  width: 700px;
   display: flex;
 }
 
@@ -48,6 +51,10 @@ ul li {
   color: #fff;
   font-family: Open Sans, sans-serif;
   font-size: 18px;
+}
+
+ul li:hover {
+  font-size: 20px;
 }
 
 main {
@@ -71,6 +78,13 @@ main h2 {
   z-index: 1;
   max-width: 300px;
   line-height: 68px;
+}
+
+main .for_phone {
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 500px;
+  display: flex;
 }
 
 main button {
@@ -98,8 +112,8 @@ main p {
 
 .iphone {
   position: absolute;
-  top: 208px;
-  right: 0;
+  top: 15.9%;
+  left: 17%;
 }
 
 .second_block {
@@ -236,6 +250,9 @@ main p {
   color: #d22856;
   font-size: 18px;
   line-height: 30px;
+}
+
+.alarmclock .info span:hover {
   text-decoration: underline;
 }
 
@@ -299,7 +316,7 @@ main p {
 }
 
 .grid .table .first {
-  background-color: #f2f2f2;
+  background: none;
 }
 
 .grid .table div {
@@ -331,6 +348,7 @@ main p {
   justify-content: center;
   align-items: center;
   height: 850px;
+  margin-top: 50px;
   font-family: Open Sans, sans-serif;
   display: flex;
 }
@@ -346,6 +364,7 @@ main p {
 .map .information {
   justify-content: space-evenly;
   width: 100%;
+  margin-top: 20px;
   display: flex;
 }
 
@@ -373,8 +392,24 @@ main p {
   line-height: 32px;
 }
 
+.inform p:hover {
+  text-decoration: underline;
+}
+
+.wrapp {
+  justify-content: center;
+  display: flex;
+}
+
+.wrapp .triangle {
+  border-top: 123px solid #fff;
+  border-left: 600px solid #0000;
+  border-right: 600px solid #0000;
+  position: absolute;
+}
+
 .footer {
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   height: 197px;
@@ -405,6 +440,12 @@ main p {
   width: 48px;
   height: 48px;
   display: flex;
+}
+
+.footer .networks .circles:hover {
+  border: 5px solid #28364526;
+  width: 50px;
+  height: 50px;
 }
 
 .footer .when {

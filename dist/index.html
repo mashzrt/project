@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/index.8368275b.css">
     <link rel="stylesheet" href="/index.9bfebdba.css">
+    <link rel="stylesheet" href="/index.3a4b6f68.css">
     <title>Document</title>
   </head>
   <body>
@@ -15,14 +16,16 @@
             <a href="/" class="header_logo link"></a>
             <img src="/logo_desktop.742cdfc4.svg">
           </div>
-          <nav>
-            <ul>
-              <li>Главная</li>
-              <li>Фотографии</li>
-              <li>Конкурс</li>
-              <li>HTML Academy</li>
-            </ul>
-          </nav>
+          <div class="menu">
+            <nav>
+              <ul>
+                <li>Главная</li>
+                <li>Фотографии</li>
+                <li>Конкурс</li>
+                <li>HTML Academy</li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </header>
       <div>
@@ -31,18 +34,20 @@
       </div>
       <main>
         <h2>Взгляните на жизнь иначе!</h2>
-        <button>Скачать приложение</button>
-        <div class="logos">
-          <a href="/" class="logo_link"></a>
-          <img src="/apple.ba6d5a2a.svg">
-          <a href="/" class="logo_link"></a>
-          <img src="/android.d4ba9a33.svg">
-          <a href="/" class="logo_link"></a>
-          <img src="/microsoft.3b1fae91.svg">
+        <div class="for_phone">
+          <button>Скачать приложение</button>
+          <div class="logos">
+            <a href="/" class="logo_link"></a>
+            <img src="/apple.ba6d5a2a.svg">
+            <a href="/" class="logo_link"></a>
+            <img src="/android.d4ba9a33.svg">
+            <a href="/" class="logo_link"></a>
+            <img src="/microsoft.3b1fae91.svg">
+          </div>
+          <p>
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
         </div>
-        <p>
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
       </main>
     </section>
     <section class="second_block">
@@ -83,6 +88,7 @@
           </p>
         </div>
       </div>
+      <div class="bg"></div>
     </section>
     <section class="alarmclock">
       <div>
@@ -113,8 +119,9 @@
         </p>
         <img src="/right.906da780.svg">
       </div>
+
       <h2>Николай Петров</h2>
-      <p>25 лет, водитель трамвая</p>
+      <div class="who"><p>25 лет, водитель трамвая</p></div>
     </section>
     <section class="grid">
       <div class="table">
@@ -161,7 +168,11 @@
           <p>mail@htmlacademy.ru</p>
         </div>
       </div>
-      <img src="/map.524d4f3d.svg">
+
+      <div class="wrapp">
+        <div class="triangle"></div>
+        <img src="/map.524d4f3d.svg">
+      </div>
     </section>
     <footer class="footer">
       <img src="/logotype%20blue%20desktop.c6c8a879.svg">

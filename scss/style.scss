@@ -1,7 +1,8 @@
+@import url(./media.scss);
 /* open-sans-300 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Open Sans";
+  font-family: "OpenSans";
   font-style: normal;
   font-weight: 300;
   src: url("../fonts/open-sans-v40-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
@@ -29,6 +30,10 @@ $font: "Open Sans";
   height: 100vh;
   width: 100%;
   background: url(../img/back-desktop.jpg) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-size: cover;
 }
 .header_wrapper {
@@ -40,7 +45,7 @@ $font: "Open Sans";
   background: rgb(0, 0, 0, 0.3);
 }
 ul {
-  width: 900px;
+  width: 700px;
 
   display: flex;
   justify-content: space-evenly;
@@ -49,6 +54,9 @@ ul {
     font-family: $font, sans-serif;
     font-size: 18px;
     color: white;
+  }
+  li:hover {
+    font-size: 20px;
   }
 }
 main {
@@ -73,6 +81,12 @@ main {
     line-height: 68px;
     z-index: 1;
   }
+  .for_phone {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
   button {
     width: 300px;
     height: 56px;
@@ -82,6 +96,7 @@ main {
     color: white;
     font-size: 21px;
   }
+
   p {
     max-width: 300px;
     text-align: center;
@@ -89,6 +104,7 @@ main {
     line-height: 24px;
   }
 }
+
 .logos {
   width: inherit;
   display: flex;
@@ -97,8 +113,8 @@ main {
 
 .iphone {
   position: absolute;
-  right: 0;
-  top: 208;
+  left: 17%;
+  top: 15.9%;
 }
 .second_block {
   margin-top: 50px;
@@ -221,8 +237,11 @@ main {
     span {
       color: #d22856;
       font-size: 18px;
-      text-decoration: underline;
+
       line-height: 30px;
+    }
+    span:hover {
+      text-decoration: underline;
     }
   }
 }
@@ -281,7 +300,7 @@ main {
     grid-row-gap: 2px;
     grid-column-gap: 2px;
     .first {
-      background-color: #f2f2f2;
+      background: transparent;
     }
     div {
       display: grid;
@@ -314,6 +333,7 @@ main {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-top: 50px;
   h2 {
     font-size: 50px;
     line-height: 68px;
@@ -325,6 +345,7 @@ main {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+    margin-top: 20px;
   }
 }
 .inform {
@@ -348,12 +369,26 @@ main {
 
     line-height: 32px;
   }
+  p:hover {
+    text-decoration: underline;
+  }
 }
+.wrapp {
+  display: flex;
+  justify-content: center;
+  .triangle {
+    border-left: 600px solid transparent;
+    border-right: 600px solid transparent;
+    border-top: 123px solid white;
+    position: absolute;
+  }
+}
+
 .footer {
   width: 100%;
   height: 197px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 
   p {
@@ -378,6 +413,11 @@ main {
       justify-content: center;
       background: transparent;
       align-items: center;
+    }
+    .circles:hover {
+      width: 50px;
+      height: 50px;
+      border: 5px solid rgba(#283645, 15%);
     }
   }
   .when {
